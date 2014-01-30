@@ -1,17 +1,11 @@
-#!/usr/bin/env python
-'''
-
-'''
-
 import argparse
-import sys
 
 
 if __name__ == '__main__':
     # Set up command line options
     parser = argparse.ArgumentParser(
-            prog='$PROGRAM.py',
-            description='$PROGRAM - $DESCRIPTION.',
+            prog='',
+            description='',
             epilog='')
     parser.add_argument(
             'positional-argument',
@@ -34,6 +28,3 @@ if __name__ == '__main__':
             metavar='OPTION',
             default='',
             help='')
-    parser.add_mutually_exclusive_group(required=False)
-    group.add_argument('-a', action='store_true')
-    group.add_argument('-b', action='store_false')
