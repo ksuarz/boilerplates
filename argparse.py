@@ -9,6 +9,7 @@ if __name__ == '__main__':
             epilog='')
     parser.add_argument(
             'positional-argument',
+            nargs='+',
             help='')
     parser.add_argument(
             '-b',
