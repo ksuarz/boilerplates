@@ -1,0 +1,29 @@
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{thmtools}
+
+% Theorem definitions
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\declaretheoremstyle[
+    spaceabove=-6pt,
+    spacebelow=6pt,
+    headfont=\normalfont\itshape,
+    postheadspace=1em,
+    qed=\qedsymbol
+]{tight}
+\declaretheoremstyle[
+    spaceabove=10pt
+]{spaced}
+\declaretheorem[
+    name={Proof},
+    style=tight,
+    unnumbered
+]{prf}
+\declaretheorem[
+    name={Claim},
+    style=spaced,
+    unnumbered
+]{claim}
+
+% \newtheorem*{claim}{Claim}
